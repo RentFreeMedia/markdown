@@ -59,6 +59,7 @@ setup(
     name='Markdown',
     version=__version__,
     url='https://Python-Markdown.github.io/',
+    download_url='http://pypi.python.org/packages/source/M/Markdown/Markdown-%s-py2.py3-none-any.whl' % __version__,
     project_urls={
         'Documentation': 'https://Python-Markdown.github.io/',
         'GitHub Project': 'https://github.com/Python-Markdown/markdown',
@@ -74,7 +75,7 @@ setup(
     license='BSD License',
     packages=['markdown', 'markdown.extensions'],
     python_requires='>=3.6',
-    install_requires=["importlib-metadata>=4.4;python_version<'3.10'"],
+    install_requires=["importlib-metadata;python_version<'3.8'"],
     extras_require={
         'testing': [
             'coverage',
@@ -117,7 +118,6 @@ setup(
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
-        'Programming Language :: Python :: 3.10',
         'Programming Language :: Python :: 3 :: Only',
         'Programming Language :: Python :: Implementation :: CPython',
         'Programming Language :: Python :: Implementation :: PyPy',
